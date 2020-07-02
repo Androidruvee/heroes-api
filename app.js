@@ -118,7 +118,7 @@ app.delete('/api/heroes/:heroId', (req,res) => {
 
   if (!hero) {
 
-    return res. status(404).send("The give Id does not exist on our server");
+    return res. status(404).send("The give Id doen't exist on our server");
   }
   let indexofHero = heroesArray.indexof(hero);
   heroesArray.splice(indexofHero,1);
